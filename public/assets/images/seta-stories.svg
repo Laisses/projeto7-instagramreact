@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   class="ionicon"
+   viewBox="0 0 522.90063 522.90063"
+   version="1.1"
+   id="svg849"
+   sodipodi:docname="setinha2.svg"
+   inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)"
+   width="522.90063"
+   height="522.90063">
+  <metadata
+     id="metadata855">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Chevron Forward Circle</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs853">
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter933"
+       x="-0.10427754"
+       width="1.2085551"
+       y="-0.10427754"
+       height="1.2085551">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="20.57306"
+         id="feGaussianBlur935" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     id="namedview851"
+     showgrid="false"
+     inkscape:zoom="0.81054688"
+     inkscape:cx="420.78797"
+     inkscape:cy="394.71996"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg849"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <title
+     id="title845">Chevron Forward Circle</title>
+  <g
+     id="g939"
+     transform="translate(1.0271025,-18.712673)">
+    <circle
+       style="opacity:0.226757;fill:#000000;stroke:#000000;stroke-width:1.71995;filter:url(#filter933)"
+       id="path859"
+       cx="272.76056"
+       cy="294.9678"
+       r="236.74966"
+       transform="matrix(0.91376252,0,0,0.91376252,11.184833,10.63246)" />
+    <path
+       d="m 47.999994,247.36386 c 0,114.87 93.130006,208 208.000006,208 114.87,0 208,-93.13 208,-208 0,-114.87 -93.13,-207.999997 -208,-207.999997 -114.87,0 -208.000006,93.129997 -208.000006,207.999997 z m 257.370006,0 -84.68,-84.69 a 16,16 0 0 1 22.62,-22.62 l 96,96 a 16,16 0 0 1 0,22.62 l -96,96 a 16,16 0 0 1 -22.62,-22.62 z"
+       id="path857"
+       style="fill:#ffffff" />
+  </g>
+</svg>

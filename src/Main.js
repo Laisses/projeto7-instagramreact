@@ -1,54 +1,11 @@
-import { Stories } from "./Stories";
-import { Posts } from "./Posts";
-
-
-const Feed = () => {
-    return (
-        <div className="feed">
-            <Stories />
-            <Posts />
-        </div>
-        
-    );
-};
-
-
-
-
-
-
+import { Feed } from "./Feed";
+import { Sidebar } from "./Sidebar";
 
 export const Main = () => {
     return (
         <main>
             <Feed />
+            <Sidebar />
         </main>
     );
 };
-
- //main
-    //feed
-        //stories
-        //posts
-    //sidebar
-        //perfil
-        //sugestoes
-        //footer
-
-
-    
-/*
-const Imagem = props => {
-  return (
-    <img src={props.url}/>
-  );
-}
-
-function App() {
-  return (
-    <div className="imagens">
-      {urls.map((u) => (<Imagem url={u} />))}
-    </div>
-  );
-}
-*/

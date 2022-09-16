@@ -6,7 +6,7 @@ export const Footer = () => {
     return (
         <div className="sidebar__footer">
             <ul>
-                {lista.map(e => <li>{e}</li>)}
+                {lista.map(e => <li key={e}>{e}</li>)}
             </ul>
             <p>&copy; instagram do facebook</p>
         </div>

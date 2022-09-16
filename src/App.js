@@ -3,12 +3,12 @@ import { MenuMobile } from "./MenuMobile";
 import { Main } from "./Main";
 
 export const App = () => {
-    return (
-      <div>
-        <NavbarDesktop />
-        <NavbarMobile />
-        <Main />
-        <MenuMobile />
-      </div> 
-    );
+  return (
+    <div>
+      <NavbarDesktop />
+      <NavbarMobile />
+      <Main />
+      <MenuMobile />
+    </div>
+  );
 }

@@ -1,4 +1,5 @@
 import { NavbarDesktop, NavbarMobile } from "./Navbar";
+import { MenuMobile } from "./MenuMobile";
 
 export const App = () => {
 
@@ -6,6 +7,7 @@ export const App = () => {
       <body>
         <NavbarDesktop />
         <NavbarMobile />
+        <MenuMobile />
       </body> 
     );
     //Navbar-desktop

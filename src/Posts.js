@@ -139,7 +139,7 @@ const Post = props => {
             </div>
             <div className="posts__reacoes">
                 <img src={props.curtidasImg} alt="Foto do perfil" />
-                <p>Curtido por <span>{props.curtidasNome}</span> e <span>outras {valor} pessoas</span></p>
+                <p>Curtido por <span>{props.curtidasNome}</span> e <span>outras {valor.toLocaleString()} pessoas</span></p>
             </div>
             <div className="posts__comentarios">
                 <h3>Ver todos os {props.comentariosQtde} comentários</h3>

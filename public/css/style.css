@@ -338,6 +338,7 @@ nav {
 
 .perfil--imagem {
   border-radius: 50%;
+  width: 56px;
 }
 
 .sidebar__perfil--login {

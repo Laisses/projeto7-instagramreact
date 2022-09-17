@@ -90,7 +90,7 @@ const Post = props => {
     const [status, setStatus] = React.useState(naoSalvo);
 
     const likePost = () => {
-        if(cor === coracaoPreto) {
+        if (cor === coracaoPreto) {
             setCor(coracaoVermelho);
             setValor(valor + 1);
         } else {
@@ -106,10 +106,6 @@ const Post = props => {
             setStatus(naoSalvo);
         }
     };
-
-    //trocar a cor usando useState e ver se é true ou false
-    //Salvar muda a cor para preenchido de preto
-    //como colocar ponto no milhaaaaaaaaaaaaares
 
     return (
         <li>
@@ -131,11 +127,11 @@ const Post = props => {
             }
             <div className="posts__acoes">
                 <div className="posts__acoes--positivas">
-                    <img src={cor} alt="Ícone de coração" onClick={likePost}/>
+                    <img src={cor} alt="Ícone de coração" onClick={likePost} />
                     <img src="assets/images/chatbubble-outline.svg" alt="Ícone de balão de conversa" />
                     <img src="assets/images/paper-plane-outline.svg" alt="Ícone de um avião de papel" />
                 </div>
-                <img src= {status} alt="Ícone de marcador de página" onClick={savePost}/>
+                <img src={status} alt="Ícone de marcador de página" onClick={savePost} />
             </div>
             <div className="posts__reacoes">
                 <img src={props.curtidasImg} alt="Foto do perfil" />

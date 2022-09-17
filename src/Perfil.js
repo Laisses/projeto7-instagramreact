@@ -19,7 +19,7 @@ export const Perfil = () => {
 
     const inserirFoto = () => {
         const fotoPerfil = prompt("Cole o endereço da sua imagem");
-        const regex = /(?:https?):\/\/(\w+:?\w*)?(\S+)(:\d+)?(\/|\/([\w#!:.?+=&%!\-\/]))?/;
+        const regex = /(data:image\/|(?:https?):\/\/(\w+:?\w*)?(\S+)(:\d+)?(\/|\/([\w#!:.?+=&%!\-\/]))?)/;
 
         if (fotoPerfil === null) {
             setFoto(foto);

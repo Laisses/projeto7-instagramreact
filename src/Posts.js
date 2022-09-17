@@ -77,6 +77,7 @@ const postsData = [
 ];
 
 const Post = props => {
+    
     return (
         <li>
             <div className="posts__titulo">

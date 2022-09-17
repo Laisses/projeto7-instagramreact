@@ -1,21 +1,29 @@
-const nome = "Catana";
-
-const Nome = props => {
-    return (
-        <div>
-            <p>{props.nome}</p>
-            <img src="assets/images/edit.svg" alt="ícone de editar" />
-        </div>
-    );
-};
+import React from "react";
 
 export const Perfil = () => {
+    const [nome, setNome] = React.useState("Catana");
+    const [foto, setFoto] = React.useState("assets/images/catanacomics1.jpg");
+
+    const inserirNome = () => {
+        const nomePerfil = prompt("Qual o seu nome?");
+        setNome(nomePerfil);
+    }
+
+    const inserirFoto = () => {
+        const fotoPerfil = prompt("Cole o endereço da sua imagem");
+        setFoto(fotoPerfil);
+        console.log(fotoPerfil, typeof fotoPerfil)
+    }
+
     return (
         <div className="sidebar__perfil">
-            <img src="assets/images/catanacomics1.jpg" alt="Foto de perfil" className="perfil--imagem" />
+            <img src={foto} alt="Foto de perfil" className="perfil--imagem" onClick={inserirFoto} />
             <div className="sidebar__perfil--login">
                 <h3>catanacomics</h3>
-                <Nome key={nome} nome={nome} />
+                <div>
+                    <p>{nome}</p>
+                    <img src="assets/images/edit.svg" alt="ícone de editar" onClick={inserirNome} />
+                </div>
             </div>
         </div>
     );

@@ -15,13 +15,26 @@ export const Perfil = () => {
         } else {
             setNome(nomePerfil);
         }      
-    } 
+    };
 
     const inserirFoto = () => {
         const fotoPerfil = prompt("Cole o endereço da sua imagem");
-        setFoto(fotoPerfil);
-        console.log(fotoPerfil, typeof fotoPerfil)
-    }
+        /*const regex = /(?:https?):\/\/(\w+:?\w*)?(\S+)(:\d+)?(\/|\/([\w#!:.?+=&%!\-\/]))?/;*/
+
+        if (fotoPerfil === null) {
+            setFoto(foto);
+        } else if (fotoPerfil === "") {
+            alert("Você deve colocar uma nova imagem");
+            inserirFoto();
+        } else {
+            setFoto(fotoPerfil);
+        }
+        
+        /*else if (!regex.test(fotoPerfil)) {
+            alert("A imagem deve ser uma URL");
+            inserirFoto();
+        }*/
+    };
 
     return (
         <div className="sidebar__perfil">

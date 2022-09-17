@@ -19,21 +19,19 @@ export const Perfil = () => {
 
     const inserirFoto = () => {
         const fotoPerfil = prompt("Cole o endereço da sua imagem");
-        /*const regex = /(?:https?):\/\/(\w+:?\w*)?(\S+)(:\d+)?(\/|\/([\w#!:.?+=&%!\-\/]))?/;*/
+        const regex = /(?:https?):\/\/(\w+:?\w*)?(\S+)(:\d+)?(\/|\/([\w#!:.?+=&%!\-\/]))?/;
 
         if (fotoPerfil === null) {
             setFoto(foto);
         } else if (fotoPerfil === "") {
             alert("Você deve colocar uma nova imagem");
+            inserirFoto();   
+        } else if (!regex.test(fotoPerfil)) {
+            alert("A imagem deve ser uma URL");
             inserirFoto();
         } else {
             setFoto(fotoPerfil);
         }
-        
-        /*else if (!regex.test(fotoPerfil)) {
-            alert("A imagem deve ser uma URL");
-            inserirFoto();
-        }*/
     };
 
     return (

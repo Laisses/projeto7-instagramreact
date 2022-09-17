@@ -6,7 +6,7 @@ export const Perfil = () => {
 
     const inserirNome = () => {
         const nomePerfil = prompt("Qual o seu nome?");
-        
+
         if (nomePerfil === null) {
             setNome(nome);
         } else if (nomePerfil === "") {
@@ -14,7 +14,7 @@ export const Perfil = () => {
             inserirNome();
         } else {
             setNome(nomePerfil);
-        }      
+        }
     };
 
     const inserirFoto = () => {
@@ -25,7 +25,7 @@ export const Perfil = () => {
             setFoto(foto);
         } else if (fotoPerfil === "") {
             alert("Você deve colocar uma nova imagem");
-            inserirFoto();   
+            inserirFoto();
         } else if (!regex.test(fotoPerfil)) {
             alert("A imagem deve ser uma URL");
             inserirFoto();

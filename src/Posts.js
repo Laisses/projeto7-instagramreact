@@ -79,12 +79,20 @@ const postsData = [
 ];
 
 const Post = props => {
+    const coracaoPreto = "assets/images/heart-outline.svg";
+    const coracaoVermelho = "assets/images/heart-filled.svg";
 
     const [valor, setValor] = React.useState(props.curtidasNumero);
+    const [cor, setCor] = React.useState(coracaoPreto);
 
-    const like = () => {
-        const valorAumentado = valor + 1;
-        setValor(valorAumentado);
+    const likePost = () => {
+        if(cor === coracaoPreto) {
+            setCor(coracaoVermelho);
+            setValor(valor + 1);
+        } else {
+            setCor(coracaoPreto);
+            setValor(valor - 1);
+        }        
     };
 
     //trocar a cor usando useState e ver se é true ou false
@@ -111,7 +119,7 @@ const Post = props => {
             }
             <div className="posts__acoes">
                 <div className="posts__acoes--positivas">
-                    <img src="assets/images/heart-outline.svg" alt="Ícone de coração" onClick={like}/>
+                    <img src={cor} alt="Ícone de coração" onClick={likePost}/>
                     <img src="assets/images/chatbubble-outline.svg" alt="Ícone de balão de conversa" />
                     <img src="assets/images/paper-plane-outline.svg" alt="Ícone de um avião de papel" />
                 </div>

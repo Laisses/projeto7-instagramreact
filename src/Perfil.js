@@ -6,8 +6,16 @@ export const Perfil = () => {
 
     const inserirNome = () => {
         const nomePerfil = prompt("Qual o seu nome?");
-        setNome(nomePerfil);
-    }
+        
+        if (nomePerfil === null) {
+            setNome(nome);
+        } else if (nomePerfil === "") {
+            alert("Você precisa escrever um nome!")
+            inserirNome();
+        } else {
+            setNome(nomePerfil);
+        }      
+    } 
 
     const inserirFoto = () => {
         const fotoPerfil = prompt("Cole o endereço da sua imagem");

@@ -82,8 +82,12 @@ const Post = props => {
     const coracaoPreto = "assets/images/heart-outline.svg";
     const coracaoVermelho = "assets/images/heart-filled.svg";
 
+    const naoSalvo = "assets/images/bookmark-outline.svg";
+    const salvo = "assets/images/bookmark-filled.svg";
+
     const [valor, setValor] = React.useState(props.curtidasNumero);
     const [cor, setCor] = React.useState(coracaoPreto);
+    const [status, setStatus] = React.useState(naoSalvo);
 
     const likePost = () => {
         if(cor === coracaoPreto) {
@@ -92,7 +96,15 @@ const Post = props => {
         } else {
             setCor(coracaoPreto);
             setValor(valor - 1);
-        }        
+        }
+    };
+
+    const savePost = () => {
+        if (status === naoSalvo) {
+            setStatus(salvo);
+        } else {
+            setStatus(naoSalvo);
+        }
     };
 
     //trocar a cor usando useState e ver se é true ou false
@@ -123,7 +135,7 @@ const Post = props => {
                     <img src="assets/images/chatbubble-outline.svg" alt="Ícone de balão de conversa" />
                     <img src="assets/images/paper-plane-outline.svg" alt="Ícone de um avião de papel" />
                 </div>
-                <img src="assets/images/bookmark-outline.svg" alt="Ícone de marcador de página" />
+                <img src= {status} alt="Ícone de marcador de página" onClick={savePost}/>
             </div>
             <div className="posts__reacoes">
                 <img src={props.curtidasImg} alt="Foto do perfil" />
